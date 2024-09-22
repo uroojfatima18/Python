@@ -1,3 +1,17 @@
+
+from PIL import Image, ImageDraw, ImageFont
+
+image = Image.open("https://github.com/uroojfatima18/Python/blob/main/output_id_card%20(2).png?raw=true")
+
+draw = ImageDraw.Draw(image)
+font = ImageFont.load_default()
+
+
+draw.text((10, 10), "ID Card", fill="black", font=font)
+
+image.save("final_id_card.png")
+
+
 from PIL import Image, ImageDraw, ImageFont
 
 # Load your assets (font and logo)
@@ -71,4 +85,7 @@ draw.line([(signature_x_position - 10, signature_y_position - 10),
 # Save the final image
 image.save('/content/output_id_card.png')  # Save your card
 
-# Display the 
+# Display the final image
+image.show()
+
+
