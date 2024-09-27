@@ -1,2 +1,2 @@
 # Python
-Started a python 
+I started to learn Python.
